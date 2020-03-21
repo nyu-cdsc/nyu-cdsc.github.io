@@ -1,43 +1,44 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
-
-
 @font-face {
-    font-family: "Gotham Bold";
-    src:
-        url("/assets/fonts/Gotham-Bold.otf") format("opentype"),   
+    font-family: 'Verlag Book';
+	src: 
+		url("../fonts/verlag-book.otf") format("opentype"),   
+		url('../fonts/Verlag-Book.woff2') format('woff2'),
+        url("../fonts/'Verlag-Book.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Gotham Medium";
-    src:
-        url("/assets/fonts/Gotham-Medium.otf") format("opentype"),   
-}
-
-
-@font-face {
-    font-family: "Gotham Book";
-    src:
-        url("/assets/fonts/Gotham-Book.otf") format("opentype"),   
+    font-family: 'Verlag Bold';
+	src: 
+		url("../fonts/Verlag-Bold.otf") format("opentype"),  
+		url('../fonts/Verlag-Bold.woff2') format('woff2'),
+        url('../fonts/Verlag-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Verlag Bold";
-    src:
-        url("/assets/fonts/Verlag-Bold.otf") format("opentype"),   
+    font-family: 'Gotham Book';
+	src: 
+		url("../fonts/Gotham-Book.otf") format("opentype"),   
+		url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "VerlagBook";
-    src:
-        url("/assets/fonts/Verlag-Book.otf") format("opentype"),   
-}
-
-@font-face {
-    font-family: "Verlag Light";
-    src:
-        url("/assets/fonts/Verlag-Light.otf") format("opentype"),   
+    font-family: 'Gotham';
+	src: 
+		url("../fonts/Gotham-Medium.otf") format("opentype"),   
+		url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
 .verlag_bold {
@@ -177,7 +178,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000;
-		font-family: "Verlag", Arial, sans-serif;
+		font-family: "Verlag Book", Arial, sans-serif;
 		font-size: 16.5pt;
 		font-weight: 300;
 		line-height: 1.65;
@@ -242,7 +243,7 @@ input, select, textarea {
 			text-decoration: none;
 			border-bottom: 0;
 			display: block;
-			font-family: 'Verlag', Arial, sans-serif;
+			font-family: 'Verlag Book', Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 700;
 			/* letter-spacing: 0.1em; */
@@ -305,7 +306,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000;
-		font-family: 'Verlag', Arial, sans-serif;
+		font-family: 'Verlag Book', Arial, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
