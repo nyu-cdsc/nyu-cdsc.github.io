@@ -3514,7 +3514,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			font-family: "Verlag", Arial, sans-serif;
+			font-family: "Verlag Book", Arial, sans-serif;
 			font-size: 1em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
@@ -3626,7 +3626,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header p {
-			font-family: "Verlag", Arial, sans-serif;
+			font-family: "Verlag Book", Arial, sans-serif;
 			font-size: 1.2em;
 			/* text-transform: uppercase; */
 		}
