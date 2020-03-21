@@ -1,0 +1,2024 @@
+
+@font-face {
+    font-family: "Gotham Bold";
+    src:
+        url("/static/fonts/Gotham-Bold.otf") format("opentype"),   
+        url("/static/fonts/Gotham-Bold.woff") format("woff"),
+        url("/static/fonts/Gotham-Bold.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src:
+        url("/static/fonts/Gotham-Medium.otf") format("opentype"),   
+        url("/static/fonts/Gotham-Medium.woff") format("woff"),
+        url("/static/fonts/Gotham-Medium.svg#filename") format("svg");
+}
+
+
+@font-face {
+    font-family: "Gotham Book";
+    src:
+        url("/static/fonts/Gotham-Book.otf") format("opentype"),   
+        url("/static/fonts/Gotham-Book.woff") format("woff"),
+        url("/static/fonts/Gotham-Book.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Verlag Bold";
+    src:
+        url("/static/fonts/Verlag-Bold.otf") format("opentype"),   
+        url("/static/fonts/Verlag-Bold.woff") format("woff"),
+        url("/static/fonts/Verlag-Bold.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Verlag Book";
+    src:
+        url("/static/fonts/Verlag-Book.otf") format("opentype"),   
+        url("/static/fonts/Verlag-Book.woff") format("woff"),
+        url("/static/fonts/Verlag-Book.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Verlag Light";
+    src:
+        url("/static/fonts/Verlag-Light.otf") format("opentype"),   
+        url("/static/fonts/Verlag-Light.woff") format("woff"),
+        url("/static/fonts/Verlag-Light.svg#filename") format("svg");
+}
+
+.verlag_bold {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+}
+
+.gotham_bold {
+    font-family: 'Gotham Bold', Arial, sans-serif;
+}
+
+
+
+.full_width {
+    width: 100%;
+}
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    
+
+    font-family: 'Gotham Book', Arial, sans-serif;
+}
+
+.body_user {
+    margin: 0 auto 250px;   /* 250px is height of footer */
+    background-color: #ebebeb;
+}
+.body_manager {
+    margin: 0 auto 153px;   /* 250px is height of footer */   
+    background-color: #ebebeb;
+}
+
+
+#admin_top_header_div {
+    background: #026fb6;
+}
+#admin_top_header_div button {
+    font-family: 'Gotham Medium', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #5cb6dd;
+    font-size: 0.9em;
+}
+#admin_top_header_div a:hover,
+#admin_top_header_div a:focus,
+#admin_top_header_div a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#admin_top_header_panda_logo_div {
+    padding: 20px 0px 10px 25px;
+}
+#admin_top_header_nyu_princeton_logos_div {
+    padding: 30px 25px 0px 0px;
+    text-align: right;
+}
+#admin_top_header_nav_group_div {
+    
+    padding: 0px 0px 10px 0px;
+}
+
+#admin_top_header_nav_group_div_nested {
+    text-align: right;
+}
+#admin_bottom_footer_div {
+    background: #003c69;
+
+    /* added so footer sticks to bottom */
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+#admin_bottom_footer_logo_image_div {
+    text-align: left;
+    padding: 70px 40px 20px 25px;
+}
+#admin_bottom_footer_panda_image_div {
+    text-align: right;
+    padding: 20px 40px 0px 40px;
+}
+
+
+
+
+#user_top_header_div {
+    background: #026fb6;
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #5cb6dd;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+#user_top_header_div button {
+    color: white;
+    text-decoration: none;
+}
+
+#user_top_header_div button a {
+
+}
+
+.user_top_header_div_large {
+    height:197px;
+}
+
+.user_top_header_div_small {
+    height:132px;
+}
+
+
+#user_top_header_panda_logo_div {
+    padding-top: 20px;
+}
+
+#user_top_header_nav_group_div {
+    text-align: right;
+    padding-top: 33px;
+}
+#user_top_header_nav_group_div_small {
+    text-align: right;
+    padding:10px 0px 0px 0px;
+}
+
+#user_top_header_nyu_princeton_logos_image {
+    margin: 64px 14px 0px 0px;
+}
+
+#user_top_header_nav_group_div_nested {
+    text-align: right;
+}
+#user_bottom_footer_div {
+    background: #026fb6;
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #5cb6dd;
+    font-size: 0.8em;
+    text-decoration: none;
+
+    /* added so footer sticks to bottom */
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    
+}
+#user_bottom_footer_div button {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#user_bottom_footer_logo_image_div {
+    padding-top: 108px;
+}
+#user_bottom_footer_logo_image_mobile_div {
+    padding: 30px 0px 0px 20px;
+}
+.user_bottom_footer_nav_filler_div {
+    height:75px;
+}
+.user_bottom_footer_social_icon {
+    padding:0px 15px 5px 5px;
+}
+#user_bottom_footer_nav_div {
+    text-align: right;
+    padding: 50px 0px 20px 0px;
+}
+#user_bottom_footer_panda_image_div {
+    text-align: right;
+}
+#user_bottom_copyright_text {
+    padding: 25px 16px 0px 0px;
+    font-size: 0.9em;
+}
+.user_rounded_light_grey_container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    /* padding: 30px 15px 40px; */
+    padding: 30px 2% 40px;
+}
+.user_rounded_light_grey_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:3.0em;
+    
+}
+
+
+
+
+
+.user_rounded_dark_grey_container {
+    background-color: #dfe0e0;
+    border-radius: 10px;
+    padding: 30px 15px 40px;
+    margin-bottom:10px;
+}
+.user_rounded_dark_grey_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.8em;
+    color: #003c69;
+    margin: 12px 0px 30px;
+}
+.user_rounded_dark_grey_container h3 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.4em;
+    color: #0172bb;
+    margin:15px 0px 0px;
+}
+.user_rounded_dark_grey_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    padding: 10px 40px;
+    font-size: 1.2em;
+    margin:10px 0px;
+}
+
+
+
+
+
+
+
+.btn-group {
+
+    background-color: #026fb6;
+}
+
+
+
+.horiz_div_container { 
+    float:left; 
+    width:100%; 
+}
+.horiz_div_container div { 
+    float:left;
+}
+
+
+
+#main_content_background_color_div {
+    background-color: #ebebeb;
+    /*border: 1px #00ff00 solid;*/
+
+}
+#main_content_div {
+    padding: 45px 25px 80px;
+}
+#main_content_user_div {
+    padding: 45px 0px 80px;
+}
+#main_content_user_home_div {
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: #ebebeb;
+    width: 100%;    
+}
+#main_content_user_register_div {
+    padding: 45px 25px 0px !important;
+    background-color: #ebebeb;
+     
+}
+
+.top_notice_banner {
+    background-color: #ffcc17;
+    padding:15px 30px;
+    text-align: center;
+}
+
+.data_block_div {
+    padding: 0px 0px 35px;
+}
+.data_block_div h3 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-weight:bold;
+    font-style:bold;
+    
+    font-size: 2.0em;
+    color: #026fb6;
+}
+.data_block_div div {
+    padding: 20px 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.data_block_no_results {
+    text-align: center;
+    padding: 0px 40px;
+    color:#999;
+}
+
+
+.white_rounded_div {
+    padding: 20px 0px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.table_simple {
+    padding: 20px 0px 30px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.table_simple th {
+    padding: 20px 10px 0px 10px;
+    font-size: 11px;
+}
+
+.table_simple td {
+    padding: 2px 10px 0px 10px;
+    height: 40px;
+}
+
+.table_simple_row_color_1 {
+    background-color: #f1f1f1;
+}
+.table_simple_row_color_2 {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+.list_table {
+    background-color: #ffffff;
+}
+.list_table .thead .tr  {
+    color: #fff;
+}
+
+
+
+.list_block_div {
+    padding: 0px 0px 35px;
+}
+.list_block_div h3 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-weight:bold;
+    font-style:bold;
+    
+    font-size: 2.0em;
+    color: #026fb6;
+}
+
+.list_block_div h4 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-weight:bold;
+    font-style:bold;
+    
+    font-size: 1.5em;
+    color: #026fb6;
+}
+
+.list_block_div h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-weight:bold;
+    font-style:bold;
+    padding-top:0px;
+    font-size: 3.0em;
+    color: #026fb6;
+}
+
+.list_block_div .white_block_div {
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.list_row {
+    border-width: 1px 0px 0px;
+    border-color: #dedede;
+    border-style: solid;
+    height: 50px;
+    padding: 15px 0px 0px 12px;
+}
+.list_row_double_height {
+    height: 75px;
+    padding: 15px 0px 0px 12px;
+}
+.list_row_triple_height {
+    height: 100px;
+    padding: 15px 0px 0px 12px;
+}
+.list_row_odd {
+    background-color: #feffff;
+}
+.list_row_even {
+    background-color: #f9fafa;
+}
+
+
+
+
+
+
+
+
+
+.form-btn {
+    border-style: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    font-family: 'Gotham Book', Arial, sans-serif;
+
+}
+.form-btn-cancel {
+    border-style: none;
+    font-size: 13px;
+    height: auto;
+    font-weight: normal;
+    padding: 10px 40px 9px;
+    text-transform: uppercase;
+    font-family: 'Gotham Book', Arial, sans-serif;  
+    background-color: #d1d3d4;  
+    color: #003c69;
+}
+.form-btn-cancel-blue {
+    border-style: none;
+    font-size: 13px;
+    height: auto;
+    font-weight: normal;
+    padding: 10px 40px 9px;
+    text-transform: uppercase;
+    font-family: 'Gotham Book', Arial, sans-serif;  
+    background-color: #0172bb;  
+    color: #ffffff;
+}
+
+
+.form-btn-green {
+    background-color: #009d3f;
+}
+.form-btn-light-grey {
+    background-color: #d1d3d4;
+}
+.form-btn-red {
+    background-color: #db1c24;
+}
+.form-btn-yellow {
+    background-color: #ffcc17;
+    color: #003c69;
+}
+
+
+.form_text_input {
+    width: 300px;
+}
+
+.form_text_input_short_number {
+    width: 50px;
+}
+.form_buttons_container_div {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+input[type=submit] {
+
+    margin: 0px 3px 10px 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #fff;
+    border-style: none;
+    
+    height: auto;
+    
+    padding: 10px 40px;
+    
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 0.9em;
+}
+
+
+.multi_select {
+    width: 500px;
+    
+}
+
+
+a button {
+
+    margin: 0px 3px 10px 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #fff;
+    border-style: none;
+    
+    height: auto;
+    
+    padding: 10px 40px;
+    
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 0.9em;
+}
+
+.button_small {
+    margin: 5px 3px 10px 0px;
+    padding: 5px 10px;
+}
+
+
+.button_medium {
+    margin: 5px 3px 10px 0px;
+    padding: 8px 12px !important;
+}
+
+
+
+
+.blue {
+    background-color: #0172bb;
+    /*color: #5cb6dd;*/
+    color: #fff;
+}
+.blue:hover,
+.blue:focus,
+.blue:active {
+    color: #fff;
+}
+
+.light_grey {
+    background-color: #d1d3d4;
+    color: #003c69;
+}
+.light_grey:hover,
+.light_grey:focus,
+.light_grey:active {
+    color: #000;
+}
+
+.dark_grey {
+    background-color: #d1d3d4;
+    color: #003c69;
+}
+.dark_grey:hover,
+.dark_grey:focus,
+.dark_grey:active {
+    color: #000;
+}
+
+.red {
+    background-color: #db1c24;
+    color: #fff;
+}
+.red:hover,
+.red:focus,
+.red:active {
+    color: #fff;
+}
+
+.green {
+    background-color: #009d3f;
+    color: #fff;
+}
+.green:hover,
+.green:focus,
+.green:active {
+    color: #fff;
+}
+
+.yellow {
+    background-color: #ffcc17;
+    color: #003c69;
+}
+.yellow:hover,
+.yellow:focus,
+.yellow:active {
+    color: #003c69;
+}
+
+.purple {
+    background-color: #805a80;
+    color: #fff;
+}
+.purple:hover,
+.purple:focus,
+.purple:active {
+    color: #fff;
+}
+
+
+.grey {
+    background-color: #aaaaaa;
+    color: #fff;
+}
+.grey:hover,
+.grey:focus,
+.grey:active {
+    color: #fff;
+}
+
+
+.icon_add {
+    background-image: url('/static/images/icon_add.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.icon_add_dark {
+    background-image: url('/static/images/icon_add_dark.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.icon_edit {
+    background-image: url('/static/images/icon_edit.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.icon_delete {
+    background-image: url('/static/images/icon_delete.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.icon_email {
+    background-image: url('/static/images/icon_email.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.icon_email_dark {
+    background-image: url('/static/images/icon_email_dark.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+.icon_red_bullet {
+    background-image: url('/static/images/user/gui_link_bullet_red_arrow.png');
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+
+.searchTermLabel {
+    font-size: 11px;
+    height: auto;
+    width: 100%;
+    
+}
+
+#searchTerm {
+    font-size:12px;
+    height:34px;
+    width:200px;
+
+}
+
+
+.dataTable th {
+    font-size: 0.9em;
+    color: #5cb6dd;
+    font-style: normal !important;
+    font-weight: normal !important;
+    padding: 40px 0px 10px 10px !important;
+    
+    background-color: #003c69;
+}
+
+label {
+    width:250px;
+    vertical-align: top;
+    font-weight: normal;
+}
+label select {
+    color: #000000;
+}
+form label {
+    width:150px;
+    vertical-align: top;
+    font-weight: bold;
+}
+.form_label_long {
+    width:250px;
+}
+
+.form_button_container_div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.align_left {
+    text-align: left;
+}
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+.width_100_percent {
+    width: 100%;
+}
+
+
+
+.status_text {
+    font-size: 17px;
+    
+}
+.text_grey {
+    color: #6d6e71;
+}
+.text_blue {
+    color: #0172bb;
+}
+.text_blue_light {
+    color: #5cb6dd;
+}
+.text_blue_dark {
+    color: #003c69;
+}
+.text_green {
+    color: #009d3f;   
+}
+.text_red {
+    color: #db1c24;
+}
+.text_red_muted {
+    color: #d54545
+}
+.text_purple {
+    color: #805a80;
+}
+.text_white {
+    color: #fff !important;
+}
+.text_ip_address {
+    color: #6d6e71;
+    font-size:0.85em;
+}
+.text_study_case_date {
+    color: #6d6e71;
+    font-size:0.85em;
+}
+.link_white,
+.link_white:hover, 
+.link_white:active, 
+.link_white:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+.link_blue,
+.link_blue:hover, 
+.link_blue:active, 
+.link_blue:focus {
+    text-decoration: none;
+    color: #0172bb;
+}
+
+.link_blue_dark,
+.link_blue_dark:hover, 
+.link_blue_dark:active, 
+.link_blue_dark:focus {
+    text-decoration: none;
+    color: #003c69;
+}
+
+.link_yellow,
+.link_yellow:hover, 
+.link_yellow:active, 
+.link_yellow:focus {
+    text-decoration: none;
+    color: #ffcc17;
+}
+.link_green,
+.link_green:hover, 
+.link_green:active, 
+.link_green:focus {
+    text-decoration: none;
+    color: #009d3f;
+}
+.link_purple,
+.link_purple:hover, 
+.link_purple:active, 
+.link_purple:focus {
+    text-decoration: none;
+    color: #805a80;
+}
+
+.background_light_grey {
+    background-color: #f0f0f0;
+}
+.background_round_corners {
+     border-radius: 10px;
+}
+.background_login_blue {
+    background-color: #0172bb;
+    background-image: url('/static/images/user/character_looking_up_right_login.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.clear_padding {
+    padding: 0px;
+}
+.clear_margins {
+    margin: 0px;
+}
+
+.survey_case_question {
+    font-size: 1em !important;
+    
+    padding:0px !important;
+}
+.survey_case_answer {
+    padding: 0px 50px 40px 20px !important;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.survey_case_answer_number {
+    padding: 0px 0px 40px 20px !important;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table_family_details {
+    width: auto;
+    padding: 0px 0px;
+}
+
+
+.communication_form_subject {
+    width: 600px;
+}
+.communication_form_message {
+    width: 600px;
+    height: 400px;
+}
+
+.study_summary_table tr td {
+    padding: 2px 10px 2px 30px;
+}
+
+.year_month_initial {
+    font-size: 0.8em;
+}
+
+#report_right_dropdown_column {
+    padding: 20px 10px 30px;
+    background-color: #d1d3d4;
+}
+
+#report_right_dropdown_column div {
+
+    padding: 0px 0px 20px;
+}
+
+#report_right_dropdown_column div p {
+    font-size: 12px;
+    color: #003c69;
+    margin-bottom: 4px;
+}
+.report_dropdown_menu {
+    width:97%;
+}
+
+.report_right_menu_button {
+    width: 49%;
+    margin:0px !important;
+}
+
+.report_csv_button {
+    width: 100%;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+/* User Homepage */
+
+.home_hero_background_image_div {
+    background-image: url('/static/images/user/photo_home_hero_B.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0px -16px 60px;
+    padding-bottom: 1px;
+}
+.home_hero_image_mobile_div {
+    background-image: url('/static/images/user/photo_home_hero_B_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+.home_hero_text_mobile_div {
+    padding:16px 30px 45px;
+    margin-bottom:30px;
+    background-color: #f0f0f0;
+}
+
+
+#home_hero_container {
+    padding:0px auto;
+    margin:0px auto 75px;
+
+
+
+}
+#home_hero_container #text_div {
+    padding:30px 50% 0px 6%;
+}
+.home_hero_container_div h1 {
+    font-family: 'Verlag Light', Arial, sans-serif;
+    font-size: 2.5em;
+}
+.home_hero_container_div p {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+    padding-bottom:14px;
+
+    
+}
+.home_hero_container_div button {
+    width:120px;
+    height:44px;
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+
+
+#home_welcome_video_container {
+    text-align: center;
+}
+
+#home_three_steps_container {
+    text-align: center;
+    padding:60px 30px 20px;
+}
+#home_three_steps_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #0172bb;
+    font-size: 2.0em;
+}
+
+#home_three_steps_container p {
+    font-family: 'Verlag Light', Arial, sans-serif;
+    color: #00283d;
+    font-size: 1.2em;
+}
+
+#home_three_steps_container div {
+    padding:20px 35px 50px;
+}
+
+#home_signup_container p {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+    color: #00283d;
+    font-size: 1.6em;
+}
+
+#home_signup_container button {
+    margin:16px 0px 20px;
+
+    padding:16px 30px;
+    color: #fff;
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.1em;
+}
+
+#home_signup_container button a {
+
+}
+
+#home_signup_container #character_image_div {
+    padding:0px 0px 0px 0px;
+    text-align: center;
+}
+#home_signup_container #signup_button_div {
+    padding:50px 0px 0px 0px;
+
+}
+
+
+.home_middle_banner_background_image_div {
+    background-image: url('/static/images/user/photo_home_sub_banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0px -16px;
+    padding-bottom: 90px;
+}
+.home_middle_banner_background_image_mobile_div {
+    background-image: url('/static/images/user/photo_home_sub_banner_mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    
+}
+
+
+#home_middle_banner_container {
+    padding:45px auto 0px;
+    margin:0px auto 0px;
+    color: #ffffff;
+}
+#home_middle_banner_container #text_div {
+    padding:30px 0px 0px 56%;
+}
+#home_middle_banner_container h1 {
+    font-family: 'Verlag Light', Arial, sans-serif;
+    font-size: 2.5em;
+}
+#home_middle_banner_container p {
+    font-family: 'Verlag Light', Arial, sans-serif;
+    font-size: 1.2em;
+}
+#home_middle_banner_container button {
+    width:140px;
+    height:44px;
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+
+.home_sub_section_background_div {
+    margin: 0px -16px;
+}
+.home_sub_section_container {
+    margin: 0px auto;
+    padding: 30px 30px 45px;
+}
+.home_sub_section_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.5em;
+    color: #0172bb;
+}
+.home_sub_section_container p {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.2em;
+    color: #000000;
+}
+
+.home_sub_section_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.4em;
+    color: #0172bb;
+    padding: 6px 20px;
+    background-color: transparent;
+}
+
+.home_news_image_mobile_div {
+    padding-top:15px;
+    margin: 0px -16px;
+}
+
+
+
+.newsletter_form_container {
+    margin: 0px -20px;
+    padding: 15px 30px 50px;
+    background-color: #ffcc17;
+    text-align: center;
+}
+
+.newsletter_form_input_container {
+    width: 350px;
+    text-align: center;
+    margin: 5px auto 15px;
+    font-size: 1.5em;
+}
+
+.newsletter_form_input_container input {
+    height: 30px;
+}
+
+.newsletter_form_container input[type=submit] {
+    height: 38px;
+    font-size: 1em;   
+}
+
+
+
+
+
+
+
+/* Study Instructions */
+
+
+
+#study_instructions_container {
+   text-align: center; 
+   margin: 0px; 
+}
+#study_instructions_container .user_rounded_light_grey_container {
+
+    
+}
+#study_instructions_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.5em;
+    color: #0172bb;
+    padding: 15px 0px 30px;
+}
+#study_instructions_container h2 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.0em;
+    color: #0172bb;
+    padding: 15px 0px 30px;
+}
+#study_instructions_container p {
+    font-size: 1.3em;
+    padding: 30px 0px 40px;
+}
+#study_instructions_container h6 {
+    font-size: 1.0em;
+    padding: 30px 0px 40px;
+}
+#study_instructions_container button {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+    margin-top:30px;
+    padding: 10px 80px;
+    font-size: 1.5em;
+}
+
+#study_instructions_video_container {
+    text-align: center;
+}
+#study_instructions_video_container img {
+    width: 75%;
+}
+
+
+
+
+
+/* Take Study */
+#browser-check-yes {
+    text-align: center;   
+    background-color: #dddddd;
+    padding: 24px 0px 50px;
+    
+}
+#browser-check-yes h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:3.25em;
+    color: #0172bb;
+    
+    padding: 20px 0px 10px;
+}
+#browser-check-yes p {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.5em;
+    margin: 0px;
+    padding: 0px 100px;
+}
+
+#browser-check-yes button {
+    font-size:1.5em;
+}
+#browser-check-yes #wifi_div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 35px 30px;
+    margin: 50px 150px 50px;
+    
+}
+#browser-check-yes #wifi_div div p {
+    
+    padding-top: 20px;
+}
+
+
+#instructions-wrap {
+    /* position: absolute;
+    max-width: 200px; 
+    text-align: left;
+    color: #777;*/
+    width: 100%;
+    background-color: transparent;
+    z-index: 500;
+    display: none;
+}
+
+#instructions-wrap iframe {
+    
+    /* Qualtrics Movie Dimensions are 1300px x 954px.  Scale iFrame so it fits on screen with no scrollbars */
+    margin: 0 auto;
+    width: 1300px;
+    height: 954px;
+    
+    /* Scale iFrame so Testable Movie fits on screen with no scrollbars */
+    -webkit-transform: scale(0.838);
+    -ms-transform: scale(0.838);
+    -moz-transform: scale(0.838);
+    -moz-transform-origin: 0px 0;
+    transform: scale(0.838);
+    transform-origin: 0 0;
+}
+
+
+#instructions-wrap h1 {
+    font-size: 18px;
+}
+
+.videoInsert {
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    z-index: -100;
+}
+
+#messageModal {
+    position: absolute;
+/*    right: 0;
+    bottom: 0;
+    max-width: 400px;
+    min-width: 100%; */
+    min-height: 300px;
+    width: 97%;
+    z-index: 100;
+    opacity: 0.5;
+    background-color:clear;
+}
+#messageModalMessageWrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+#messageModalMessage {
+  opacity: 1.0;
+  color: #ffff00; 
+}
+
+.browser_buttons_div {
+    padding:30px 0px 50px;
+}
+.browser_button {
+    padding: 0px 7px;
+}
+.broswer_check_alert_image {
+    padding: 25px 0px 0px;
+}
+
+
+
+/* viewing video */
+
+.VideoViewWrap {
+    overflow: hidden;
+}
+.VideoView {
+    width:100%;
+    max-width:100% !important;
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Upload Instructions */
+
+#upload_instructions_container {
+   text-align: center;   
+   padding-top:50px;
+}
+#upload_instructions_container #wifi_div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 35px 30px;
+    margin-bottom: 50px;
+}
+#upload_instructions_container #wifi_div div p {
+    font-size: 1.5em;
+    padding-bottom: 0px;
+}
+#upload_instructions_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.75em;
+    color: #0172bb;
+    padding: 15px 0px 0px;
+}
+#upload_instructions_container p {
+    font-size: 1.5em;
+    padding: 30px 0px 55px;
+}
+
+#upload_instructions_container h6 {
+    font-size: 1.0em;
+    padding: 10px 0px 40px;
+}
+
+#upload_instructions_container input[type=submit] {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+    padding: 10px 50px 9px;
+    font-size: 1.8em;
+    margin: 10px 0px 50px;
+}
+
+
+
+
+
+/* Study Completed */
+
+#study_completed_container {
+   text-align: center;   
+   padding-top:50px;
+}
+#study_completed_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.75em;
+    color: #0172bb;
+    padding: 15px 0px 0px;
+}
+#study_completed_container p {
+    font-size: 1.2em;
+    padding: 30px 0px 55px;
+}
+
+#study_completed_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    padding: 10px 34px;
+    font-size: 1.2em;
+    margin-bottom:50px;
+}
+
+
+
+
+/* Survey Completed */
+
+#survey_completed_container {
+   text-align: center;   
+   padding-top:50px;
+}
+#survey_completed_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.75em;
+    color: #0172bb;
+    padding: 15px 0px 30px;
+}
+#survey_completed_container p {
+    font-size: 1.2em;
+    padding: 0px 0px 10px;
+}
+
+#survey_completed_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    padding: 10px 60px;
+    font-size: 1.2em;
+    margin:50px 0px;
+}
+
+
+
+
+
+/* Privacy Policy */
+
+#privacy_policy_container {
+ 
+}
+#privacy_policy_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:2.75em;
+}
+#privacy_policy_container h3 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size:1.75em;
+    color:#805a80;
+}
+#privacy_policy_container p {
+    font-size: 1em;
+    padding: 0px 0px 10px;
+}
+
+
+
+
+
+
+
+/* User FTUE Dashboard */
+
+#user_ftue_dashboard_container {
+   padding:0px 25px; 
+}
+
+#user_ftue_dashboard_container p {
+    font-size: 1.1em;
+    padding: 30px 0px 20px;
+}
+#user_ftue_dashboard_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin-top:30px;
+    padding: 8px 50px;
+    font-size: 1.7em;
+}
+
+
+
+
+
+
+
+/* User Dashboard */
+
+#user_dashboard_container {
+   padding:0px 0px; 
+}
+#user_dashboard_container h1 {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+    font-size: 2.5em;
+}
+#user_dashboard_container p {
+    font-size: 1.1em;
+    padding: 0px 0px 10px;
+}
+#user_dashboard_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin-top:0px;
+    padding: 8px 20px;
+    font-size: 1.4em;
+}
+#user_dashboard_container .shift_left {
+    margin-right:20px;
+
+}
+#user_dashboard_container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#user_dashboard_container table {
+    width: 100%;
+    margin-bottom:50px;
+}
+#user_dashboard_container table tr {
+    padding: 0px;
+}
+#user_dashboard_container table td {
+    padding: 0px 0px 0px 0px;
+}
+#user_dashboard_container table td h4 {
+    margin: 5px;
+}
+#user_dashboard_container h6 {
+    font-size:0.8em;
+    color: #999999;
+}
+
+#user_dashboard_container .data_group_div {
+    margin-bottom:40px;
+}
+#user_dashboard_container .data_row {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    margin-top:0px;
+    padding: 0px 10px;
+    font-size: 1em;
+}
+#user_dashboard_container .data_spacer {
+    height: 18px;
+}
+#user_dashboard_container .reward_div {
+    margin:0px 0px 25px 10px;
+}
+#user_dashboard_container .top_border {
+    border-top: 1px solid #d4d5d6;
+    margin-top: 45px;
+}
+#user_dashboard_container .preview_image {
+    margin-top:10px;
+}
+
+
+
+
+
+
+/* child profile */
+
+#child_profile_container {
+   padding:0px 0px; 
+}
+#child_profile_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 2.5em;
+}
+#child_profile_container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#child_profile_container h3 {
+    font-size: 0.8em;
+    margin-bottom:0px;
+}
+#child_profile_container h4 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 8px 0px 20px;
+}
+#child_profile_container h5 {
+    font-family: 'Verlag Bold', Arial, sans-serif;
+    font-size: 1.8em;
+    color:#000000;
+}
+#child_profile_container p {
+    font-size: 1.1em;
+    padding: 0px 0px 10px;
+}
+#child_profile_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin-top:20px;
+    padding: 8px 30px;
+    font-size: 1.4em;
+}
+#child_profile_container table {
+    width: 100%;  
+}
+#child_profile_container .data_group_div {
+    margin-bottom:40px;
+}
+#child_profile_container .shift_left {
+    margin-right:20px;
+}
+#child_profile_container .add_bottom_margin {
+    margin-bottom:50px;
+}
+#child_profile_container .payment_and_time_div {
+    margin-top:35px;
+}
+#child_profile_container .top_border {
+    border-top: 1px solid #d4d5d6;
+    margin-top: 45px;
+    padding-top: 10px;
+}
+
+
+
+
+/* Study Details */
+
+#user_study_details_container {
+
+}
+#user_study_details_container .user_rounded_light_grey_container {
+    padding:50px 2% 70px;
+}
+#user_study_details_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 2.5em;
+}
+#user_study_details_container p {
+    font-size: 1.1em;
+    line-height: 165%;
+    padding: 0px 65px 30px 0px;
+}
+#user_study_details_container .icon_label {
+    font-family: 'Gotham Bold', Arial, sans-serif;
+    font-size: 1.3em;
+}
+#user_study_details_container .icon_value {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    font-size: 1.3em;   
+    padding-left:10px;
+}
+#user_study_details_container .icon_image {
+    margin-right:8px;
+}
+#user_study_details_container input[type=submit] {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    
+    padding: 8px 50px;
+    font-size: 1.4em;
+}
+
+#user_study_details_container .radio_button_group_div {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 0px 0px 50px 60px;
+}
+
+
+#user_study_details_container .radio_button_group_div div {
+    margin: 6px 0px;
+}
+
+
+#user_study_details_container input[type=radio] {
+    margin: 0px 8px 0px 0px;
+}
+
+
+
+/* Account Details */
+
+#user_account_details {
+
+}
+#user_account_details .user_rounded_light_grey_container {
+    /*
+    padding-left: 60px;
+    padding-right: 60px;
+    */
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    margin-bottom: 20px;
+
+}
+#user_account_details h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 2.5em;
+    margin: 20px 0px 30px 13px;
+}
+#user_account_details .full_width {
+    width: 90%;
+}
+#user_account_details .zip_width {
+    width: 5.0em;
+}
+#user_account_details input {
+    margin: 5px 0px 15px;
+    font-size: 1.5em;
+}
+
+#user_account_details .password_instructions_div {
+    padding-right: 80px;
+}
+#user_account_details .button_div {
+    padding-right: 45px;
+    text-align: right;
+}
+#user_account_details input[type=submit] {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin: 30px 0px 40px;
+    padding: 8px 50px;
+    font-size: 1.4em;
+}
+#user_account_details button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin: 30px 40px 40px;
+    padding: 8px 50px;
+    font-size: 1.4em;
+    border-radius: 5px;
+}
+#user_account_details label {
+    width: 100%;
+}
+
+
+
+/* Take Survey */
+#user_take_survey_container {
+
+}
+#user_take_survey_container .grey_container {
+    padding: 30px 50px 50px 30px;
+}
+#user_take_survey_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 2.5em;
+    margin: 20px 0px 10px 0px;
+}
+#user_take_survey_container .question_block_div {
+    padding: 20px 15px 35px;
+    border-bottom: 1px solid #ffffff;
+}
+#user_take_survey_container input[type=radio] {
+    margin: 0px 8px 0px 0px;
+}
+#user_take_survey_container input[type=text] {
+    width:100%;
+    font-size: 1.3em;
+}
+#user_take_survey_container .text_area {
+    width:100%;
+    font-size: 1.3em;
+}
+#user_take_survey_container button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin:30px 0px 40px;
+    padding: 12px 60px;
+    font-size: 1.5em;
+}
+#user_take_survey_container .multi_choice_group_div {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 1.2em;
+    margin: 20px 0px 50px 25px;
+}
+#user_take_survey_container .multi_choice_group_div div {
+    margin: 6px 0px;
+    font-size: 1.2em;
+}
+#user_take_survey_container .multi_choice_group_div label {
+    width: 100%;
+}
+#user_take_survey_container .multi_choice_group_div .radio_div {
+    
+    font-size: 1.2em;
+}
+#user_take_survey_container .multi_choice_group_div .radio_div label {
+    background-color: #ff0000;
+    width: 50px;   
+}
+#user_take_survey_container .scale_button {
+    line-height:3.6em;
+}
+#user_take_survey_container .scale_button input[type="radio"] {
+    display: none;
+}
+
+#user_take_survey_container .scale_button input[type="radio"] + label {
+    border: 1px solid #009d3f;
+    background-color:#f0f0f0;
+    color:#82b63d;
+    width: 2.0em;
+    height: 2.0em;
+    font-size: 1.7em;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -6px;
+}
+#user_take_survey_container .scale_button input[type="radio"]:checked + label {
+    background-color:#82b63d;
+    color:#f0f0f0;   
+}
+#user_take_survey_container .question_number_image {
+    margin: 0px 50px 12px 0px;
+}
+#user_take_survey_container .question_text {
+    font-size:1.1em;
+    margin-top:8px;
+}
+
+
+
+
+/* Login */
+
+#login_container {
+    background-color: #0172bb;
+    color: #ff0000;
+    width: 100%
+}
+.login_header {
+    padding: 50px 16px 20px;
+}
+.login_header_padding_div {
+    height:100px;
+}
+
+.login_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin:30px 0px 10px; 
+}
+.login_container .bottom_links {
+    margin-top:60px;
+}
+
+.login_container .submit_button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    
+    padding: 12px;
+    width:100%;
+    font-size: 1.4em;
+}
+
+.login_container .register_div {
+    text-align: center;
+    margin:60px 0px 250px;
+}
+.login_school_logos_mobile {
+    padding: 14px 14px 0px;
+}
+
+/* Manager Login */
+#managers_login_header_left {
+    padding: 30px;
+}
+#managers_login_header_right {
+    padding: 30px;  
+    text-align: right; 
+}
+.managers_login_header_title {
+    color: #ffffff;
+    font-size:2.0em;
+    font-family: 'Verlag Light', Arial, sans-serif;
+}
+
+
+
+/* Register */
+
+#register_container {
+    
+}
+#register_container h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin:20px 0px 10px; 
+}
+#register_container .photo_1 {
+    margin: 30px 0px 30px;
+    width:100%;
+}
+#register_container .full_width {
+    width: 90%;
+}
+#register_container .zip_width {
+    width: 5.0em;
+}
+#register_container input {
+    margin: 0px 0px 10px;
+    font-size: 1.5em;
+}
+#register_container input[type=submit] {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin: 30px 0px 40px;
+    padding: 8px 50px 8px;
+    font-size: 1.4em;
+}
+#register_container label {
+    width: 100%;
+
+
+}
+
+
+#register_container .submit_button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin:30px 0px 40px;
+    padding: 10px 50px;
+    font-size: 1.5em;
+}
+#register_bottom_character {
+    margin: 30px 0px 0px 20%;
+}
+
+
+
+
+
+
+
+
+/* Child Account Details */
+
+#child_account_details {
+    
+    font-size: 1.1em;
+
+}
+#child_account_details .user_rounded_light_grey_container {
+    /*
+    padding-left: 60px;
+    padding-right: 60px;
+    */
+    padding-left: 2%;
+    padding-right: 2%;
+
+    margin-bottom: 12px;
+}
+#child_account_details h1 {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    font-size: 2.0em;
+    margin: 20px 0px 30px 0px;
+
+}
+#child_account_details .full_width {
+    width: 90%;
+}
+#child_account_details .grade_width {
+    width: 2.0em;
+}
+#child_account_details input {
+    font-size: 1.3em;
+}
+#child_account_details .button_div {    
+    text-align: right;
+}
+#child_account_details button {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin: 30px 0px 40px;
+    padding: 8px 50px;
+    font-size: 1.2em;
+}
+#child_account_details input[type=checkbox] {
+    font-family: 'Verlag Book', Arial, sans-serif;
+    margin: 10px 0px 10px;
+    
+    font-size: 1.2em;
+}
+#child_account_details label {
+    width: 100%;
+    padding:15px 0px 0px;
+}
+
+#child_account_details .checkbox_label {
+    margin-left:10px;
+}
+
+#child_account_details ul {
+    list-style: none;
+    padding-left: 15px;
+}
+#child_account_details li {
+    margin: 3px 0px;
+}
+
+#child_account_details .disclaimer {
+    font-size: 0.7em;
+    padding-top:20px;
+}
+
+
+#race_form p label {
+    width: 150px;
+    
+}
+
+
+
+
+
+
+
+
+
+
