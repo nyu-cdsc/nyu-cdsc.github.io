@@ -1,7 +1,35 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+/* @import url(fontawesome-all.min.css); */
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic"); */
 
 @font-face {
+    font-family: 'Source Han Bold';
+	src: 
+		url("../fonts/SourceHanSansHWSC-Bold.otf") format("opentype");   
+		/* url('../fonts/Verlag-Book.woff2') format('woff2'),
+        url("../fonts/'Verlag-Book.woff") format('woff'); */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Han';
+	src: 
+		url("../fonts/SourceHanSansHWSC-Regular.otf") format("opentype");   
+		/* url('../fonts/Verlag-Book.woff2') format('woff2'),
+        url("../fonts/'Verlag-Book.woff") format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.chinese {
+	font-family: 'Source Han', Arial, sans-serif !important;
+}
+
+.chinese_bold {
+	font-family: 'Source Han Bold', Arial, sans-serif !important;
+}
+
+/* @font-face {
     font-family: 'Verlag Book';
 	src: 
 		url("../fonts/verlag-book.otf") format("opentype"),   
@@ -9,7 +37,7 @@
         url("../fonts/'Verlag-Book.woff") format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'Verlag Bold';
@@ -21,7 +49,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Gotham Book';
 	src: 
 		url("../fonts/Gotham-Book.otf") format("opentype"),   
@@ -39,7 +67,7 @@
         url('../fonts/Gotham-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-}
+} */
 
 .verlag_bold {
     font-family: 'Verlag Bold', Arial, sans-serif;
@@ -306,7 +334,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000;
-		font-family: 'Verlag Book', Arial, sans-serif;
+		font-family: 'Verlag Bold', Arial, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -2281,7 +2309,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #2e3141;
+			background: #ebebeb;
 		}
 
 		select:focus::-ms-value {
@@ -2369,7 +2397,7 @@ input, select, textarea {
 			background: #ffffff;
 			border-color: #ffffff;
 			content: '\f00c';
-			color: #2e3141;
+			color: #ebebeb;
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -2924,8 +2952,8 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: Raleway, Helvetica, sans-serif;
-		font-size: 0.8em;
+		font-family: "Gotham Bold", Helvetica, sans-serif;
+		font-size: 1.0em;
 		font-weight: 700;
 		height: 3.75em;
 		letter-spacing: 0.1em;
@@ -3031,7 +3059,7 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-		@media screen and (max-width: 480px) {
+		/* @media screen and (max-width: 480px) {
 
 			input[type="submit"],
 			input[type="reset"],
@@ -3041,7 +3069,7 @@ input, select, textarea {
 				padding: 0;
 			}
 
-		}
+		} */
 
 /* Features */
 
@@ -3148,6 +3176,78 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+		@media screen and (max-width: 500px) {
+			#header {
+				height: 140px;
+			}
+			
+		}
+
+	img.pandalogo {
+		padding-top: 20px; 
+		padding-left: 10%;
+	}
+
+	img.nyulogo {
+		padding-top: 30px; 
+		width: 10%; 
+		right: 10%; 
+		position: absolute;
+	}
+
+	img.princetonlogo {
+		padding-top: 120px; 
+		width: 9.8%; 
+		right: 10%; 
+		position: absolute;
+	}
+
+		@media screen and (max-width: 900px) {
+			img.pandalogo {
+				height: 197px;
+				padding-top: 60px;
+				padding-left: 5%;
+			}
+
+			img.nyulogo {
+				padding-top: 30px; 
+				width: 10%; 
+				right: 10%; 
+				position: absolute;
+			}
+
+			img.princetonlogo {
+				padding-top: 90px; 
+				width: 9.8%; 
+				right: 10%; 
+				position: absolute;
+			}
+		
+		}
+
+		@media screen and (max-width: 629px) {
+			img.nyulogo {
+				width: 0%; 
+			}
+
+			img.princetonlogo {
+				width: 0%;
+			}
+		
+		}
+
+		@media screen and (max-width: 500px) {
+			img.pandalogo {
+				height: 140px;
+				padding-top: 60px;
+				padding-left: 5%;
+			}
+		
+		}
+						
+
+								
+
 		#header h1 {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3234,7 +3334,7 @@ input, select, textarea {
 				visibility: hidden;
 			}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			#header {
 				height: 2.75em;
@@ -3263,7 +3363,7 @@ input, select, textarea {
 								background-color: inherit;
 							}
 
-		}
+		} */
 
 		@media screen and (max-width: 480px) {
 
@@ -3526,7 +3626,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
+				background-color: #ebebeb;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
@@ -3634,9 +3734,9 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
-			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			/* padding: 9em 0 6.25em 0 ; */
+			background-color: #ebebeb;
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3649,7 +3749,7 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		#wrapper > header {
-			padding: 11em 3em 7.375em 3em ;
+			padding: 2.5em 3em 2.5em 3em ;
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3666,7 +3766,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#wrapper > header {
-			padding: 6.5em 2em 3em 2em ;
+			padding: 2.5em 2em 3em 2em ;
 			background-size: auto,
  125%;
 			margin-bottom: -2.5em;
